@@ -1,4 +1,4 @@
-// import "./_NotFound.scss";
+import "./_NotFound.scss";
 
 export default function NotFound() {
 

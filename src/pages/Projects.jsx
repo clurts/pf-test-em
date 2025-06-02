@@ -1,4 +1,4 @@
-// import "./_Projects.scss";
+import "./_Projects.scss";
 import ProjectCards from "../components/cards/ProjectCards";
 import { useLoaderData } from "react-router";
 

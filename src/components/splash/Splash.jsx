@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-// import "./_Splash.scss";
+import "./_Splash.scss";
 
 export default function Splash(){
     const [showTop, setShowTop] = useState(false);

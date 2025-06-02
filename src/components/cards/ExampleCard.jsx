@@ -1,4 +1,4 @@
-// import "./_ExampleCard.scss";
+import "./_ExampleCard.scss";
 
 export default function ExampleCard({imageSrc, url, imageAlt}) {
     return (

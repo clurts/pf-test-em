@@ -1,4 +1,4 @@
-// import "./_ProjectCards.scss";
+import "./_ProjectCards.scss";
 
 export default function ProjectCards({title,
     url,

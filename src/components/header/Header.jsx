@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 import Navigation from "../navigation/Navigation"
-// import "./_Header.scss"
+import "./_Header.scss"
 
 export default function Header({ img }) {
     return (

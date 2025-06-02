@@ -1,0 +1,50 @@
+@use "../variables/_Colors" as var;
+@use "../placeholders/_Base" as *;
+@use "../placeholders/_Img" as *;
+@use "../placeholders/_Buttons" as *;
+
+.mainSection {
+    width: 80%;
+    margin: 0 auto;
+    .logoLink {
+        max-width: 40%;
+        width: 20%;
+        display: block;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            @extend %img;
+        }
+        .full-logo {
+            width: 100%;
+        }
+        
+    }
+    span {
+        margin: 0 auto;
+        width: fit-content;
+    }
+    p {
+        max-width: 50rem;
+        width: 100%;
+    }
+
+    .project {
+        max-width: 30rem;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto, 1fr);
+        grid-template-rows: auto;
+        padding: 6rem 0;
+        align-items: center;
+        row-gap: 1rem;
+        
+        a.btn {
+            @extend %button;
+            padding: .5rem 3rem;
+            grid-area: 5 / 1 / 6 / -1;
+            justify-self: center;
+        }
+    }
+}

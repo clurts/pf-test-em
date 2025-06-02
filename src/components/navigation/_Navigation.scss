@@ -1,0 +1,75 @@
+@use "../../variables/_Colors" as var;
+@use "../../placeholders/_Base" as *;
+
+.nav {
+  @extend %base;
+  width: fit-content;
+  &__menu {
+    cursor: pointer;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+  }
+  &__burger {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2rem;
+    width: 2rem;
+    padding: 1.5rem;
+    z-index: 10;
+    & span {
+      background-color: var.$font-color;
+      height: 10%;
+      display: block;
+      &:first-of-type, &:last-of-type {
+        width: 100%;
+        align-self: start;
+      }
+      &:nth-of-type(2), &:nth-of-type(3) {
+        width: 50%;
+        align-self: center;
+        opacity: .5;
+      }
+    }
+  }
+  &__links {
+    z-index: 20;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+    background-color: var.$secundary-bg-color;
+    padding: 70% 3rem 0 8%;
+    margin-top: -15%;
+    margin-right: 2rem;
+  
+    //desktop:
+    max-width: 10rem;
+    width: 100%;
+    gap: 2rem;
+    
+  }
+  &__link {
+    width: 100%;
+    display: flex;
+    margin-right: 1rem;
+    & a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: var.$font-color;
+      padding: .5rem;
+      border-radius: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: var.$primary-color;
+      border: 1px solid var.$font-color;
+    }
+  }
+}

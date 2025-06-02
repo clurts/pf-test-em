@@ -1,0 +1,14 @@
+$primary-color: black;
+$secundary-bg-color: rgba(246, 232, 178, .05);
+$font-color: rgb(253, 227, 178);
+$formula-bg-color: rgba(255, 255, 255, .9);
+
+h1{
+  color: white;
+}
+
+h2,
+caption,
+p {
+  color: $font-color;
+}

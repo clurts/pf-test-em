@@ -1,0 +1,24 @@
+@use "../../placeholders/_Base" as *;
+@use "../../placeholders/_Img" as *;
+@use "../../variables/_Colors" as var;
+
+header {
+  @extend %base;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  z-index: 2;
+  background-color: var.$secundary-bg-color;
+  .nav {    
+    &__logo img {
+      @extend %img;
+      width: 2rem;
+      opacity: 0.3;
+    }
+  }
+}

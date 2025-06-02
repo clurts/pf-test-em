@@ -1,0 +1,118 @@
+@use "../../variables/_Colors" as var;
+@use "../../placeholders/_Img" as *;
+
+//! KEYFRAMES FOR ANIMATION
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100vw) scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100vw) scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleInFromDepth {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.4);
+        opacity: .8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+//!SPLASH CONTENT:
+.intro {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var.$primary-color;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    opacity: 1;
+    overflow: hidden; // Skjuler elementer der er udenfor skærmen
+    
+    &.hide {
+        animation: fadeOut 0.5s ease-out forwards;
+    }
+    
+    .logo {
+        max-width: 20%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        &__part {
+            width: 100%;
+            @extend %img;
+            grid-column: 1/1;
+            position: relative;
+            display: inline-block;
+            
+            // Starter skjult og ude fra skærmen
+            opacity: 0;
+            
+            &.top {
+                grid-row: 1 / 2;
+                align-self: start;
+                transform: translateX(100vw); // Starter helt til højre
+                
+                &.animate-top {
+                    animation: slideInFromRight 0.6s ease-out forwards;
+                }
+            }
+            
+            &.middle {
+                grid-row: 2 / 3;
+                align-self: center;
+                transform: scale(0); // Starter usynlig
+                
+                &.animate-middle {
+                    animation: scaleInFromDepth 0.8s ease-out forwards;
+                }
+            }
+            
+            &.bottom {
+                grid-row: 3 / 4;
+                align-self: end;
+                transform: translateX(-100vw); // Starter helt til venstre
+                
+                &.animate-bottom {
+                    animation: slideInFromLeft 0.6s ease-out forwards;
+                }
+            }
+        }
+    }
+}

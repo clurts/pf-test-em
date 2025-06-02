@@ -1,0 +1,56 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "title": "MyMovies",
+            "url": "https://thon-mymovies.netlify.app/",
+            "imageSrc": [
+                "/mymovies-screenshot543x543.png",
+                "/mymovies-screenshot564x399.png"
+            ],
+            "imageAlt": "Screenshot of myMovies webpage",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "REST API"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Pokedex",
+            "url": "https://thon-pokedex.netlify.app/",
+            "imageSrc": [
+                "/pokedex-screenshot588x588.png",
+                "/pokedex-screenshot536x378.png"
+            ],
+            "imageAlt": "Screenshot of Pokedex webpage",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "REST API"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Newsify",
+            "url": "https://thon-newsify.netlify.app/",
+            "imageSrc": [
+                "/newsify-screenshot538x538.png",
+                "/newsify-screenshot454x333.png"
+            ],
+            "imageAlt": "Screenshot of Newslify webpage",
+            "technologies": [
+                "HTML",
+                "SCSS",
+                "JavaScript",
+                "REST API",
+                "Vite",
+                "Vitest",
+                "Node",
+                "webpack"
+            ]
+        }
+    ]
+}

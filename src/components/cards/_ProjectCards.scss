@@ -1,0 +1,36 @@
+@use "../../placeholders/_Buttons" as *;
+@use "../../variables/_Colors" as var;
+
+
+.projects__card {
+    margin: 0 auto;
+    width: fit-content;
+    h3 {
+        width: fit-content;
+    }
+    a{
+    width: fit-content;
+        img {
+            max-width: 20rem;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 17px 3px rgba(255, 255, 255, 0.2);
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    >ul {
+        list-style: none;
+        margin-block-start: 0;
+        padding-inline-start: 0;
+        margin-top: 1rem;
+        width: fit-content;
+
+        li {
+            color: var.$font-color;
+        }
+    }
+}

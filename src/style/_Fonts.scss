@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body, textarea, input {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5rem;
+  color: white;
+}
+h1, a {
+    text-transform: uppercase;
+}
+h1, 
+h2,
+h4 {
+    text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  text-align: justify;
+    &:not(:first-of-type) {
+        padding-top: 1em;
+    }
+}
+
+/* SIZE */
+body {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+p {
+    font-size: 1rem;
+}
+a {
+    font-size: .75rem;
+}
+
+/* WEIGHT */ 
+h1,
+h4 {
+    font-weight: bold;
+}
+h2, 
+p,
+a {
+  font-weight: normal;
+}
+
+/* DESIGN */
+h2 {
+    text-decoration: wavy;
+} 
+h4 {
+    font-style: italic;
+}

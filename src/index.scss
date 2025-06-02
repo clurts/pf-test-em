@@ -1,0 +1,17 @@
+@use "./variables/Colors" as var;
+@use "./placeholders/Base" as *;
+@use "./placeholders/Img" as *;
+@use "./style/Fonts" as *;
+
+#root {
+    position: relative;
+    @extend %base;
+    @extend %img;
+
+}
+body {
+    @extend %base;
+    @extend %img;
+    background-color: var.$primary-color;
+    margin: 0 auto;
+}

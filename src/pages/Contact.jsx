@@ -1,5 +1,5 @@
 import Formula from "../components/formula/Formula";
-// import "./_Contact.scss";
+import "./_Contact.scss";
 
 export default function Contact() {
     return (

@@ -1,6 +1,6 @@
 import { Link, useLoaderData } from "react-router"
 import Splash from "../components/splash/Splash.jsx"
-// import "./_Home.scss"
+import "./_Home.scss"
 import ExampleCard from "../components/cards/ExampleCard.jsx";
 
 export default function Home() {

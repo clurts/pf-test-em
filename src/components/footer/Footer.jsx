@@ -1,5 +1,5 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-// import "./_Footer.scss"
+import "./_Footer.scss"
 
 export default function Footer({ img, adress, number, mail }) {
     return (

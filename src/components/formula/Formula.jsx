@@ -1,6 +1,6 @@
 import { Form, useActionData, useNavigation, useSubmit } from "react-router";
 import { useState, useEffect, useRef } from "react";
-// import "./_Formula.scss";
+import "./_Formula.scss";
 
 export default function Formula() {
     const errors = useActionData();

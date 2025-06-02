@@ -1,4 +1,4 @@
-// import "./_ErrorBoundary.scss";
+import "./_ErrorBoundary.scss";
 import {
   isRouteErrorResponse,
   Link,
